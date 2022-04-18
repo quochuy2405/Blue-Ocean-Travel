@@ -1,9 +1,10 @@
 import React from 'react'
 import '../Styles/Footer.scss'
 import logo from '../image/logo2.png'
+import copyright from '../image/copyright.png'
 const Footer = () => {
   return (
-    <div className="footer" id='footer'>
+    <div className="footer" id="footer">
       <div className="footer-top">
         <div className="logo">
           <img src={logo} alt="logo" />
@@ -39,6 +40,7 @@ const Footer = () => {
           </li>
         </ul>
       </div>
+      <p style={{ textAlign: 'center', fontSize: '0.9rem', fontWeight: '600' }}> © 2022 HuyPui</p>
     </div>
   )
 }
