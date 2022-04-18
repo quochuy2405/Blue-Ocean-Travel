@@ -1,3 +1,60 @@
 .bodyPage {
   margin-top: var(--header-height);
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.bodyNewsTravel {
+  h1 {
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 2.25em;
+  }
+
+  h2 {
+    margin: 1.75em 0 0.5em;
+    font-size: 1.75em;
+  }
+
+  h3 {
+    margin: 1.5em 0 0.5em;
+    font-size: 1.375em;
+  }
+
+  h4 {
+    margin: 1em 0;
+    font-size: 1.125em;
+  }
+
+  p,
+  ul,
+  ol,
+  pre {
+    margin: 1em 0;
+    line-height: 1.75;
+  }
+
+  img {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  ol,
+  ul {
+    padding-left: 1.25em;
+  }
+
+  p,
+  ul,
+  ol,
+  pre {
+    margin: 1em 0;
+    line-height: 1.75;
+  }
 }

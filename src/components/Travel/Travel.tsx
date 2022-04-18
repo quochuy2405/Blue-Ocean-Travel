@@ -1,3 +1,4 @@
+import { IconCalendarClock, IconIdCard } from '@douyinfe/semi-icons'
 import { Tooltip } from '@mui/material'
 import type { ITravel } from '@/types'
 import styles from './Travel.module.scss'
@@ -11,13 +12,13 @@ const Travel = (travel: ITravel) => {
       <div className={styles.infoTravel}>
         <Tooltip title={travel.date}>
           <div className="icon-date">
-            <span>calendar</span>
+            <IconCalendarClock size="large" />
             <span>{travel.date.slice(0, 5)}</span>
           </div>
         </Tooltip>
         <Tooltip title={travel.tour_guide}>
           <div className="icon-tour-guide">
-            <span>id card</span>{' '}
+            <IconIdCard size={'large'} />{' '}
             <span>{travel.tour_guide.split(' ')[travel.tour_guide.split(' ').length - 1]}</span>
           </div>
         </Tooltip>
@@ -26,10 +27,7 @@ const Travel = (travel: ITravel) => {
         <p>
           <span className={styles.titleDesc}>Giới thiệu</span>
           <br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, oditLorem ipsum dolor
-          sit amet consectetur adipisicing elit. Nostrum, odit Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Nostrum, oditLorem ipsum dolor sit amet consectetur
-          adipisicing elit. Nostrum, odit
+          {travel.description}
         </p>
       </div>
     </div>

@@ -2,12 +2,13 @@
 @use 'variables';
 
 body {
-  font-family: Poppins, 'Segoe UI Variable', 'Segoe UI', -apple-system, BlinkMacSystemFont,
+  font-family: Cabin, 'Segoe UI Variable', 'Segoe UI', -apple-system, BlinkMacSystemFont,
     'ui-sans-serif', sans-serif;
 }
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 * {

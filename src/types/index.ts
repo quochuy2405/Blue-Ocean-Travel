@@ -13,4 +13,5 @@ export interface ITravel {
   description: string
   date: string
   tour_guide: string
+  place: string
 }

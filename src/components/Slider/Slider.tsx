@@ -10,7 +10,7 @@ const listSlider = [
       'https://images.pexels.com/photos/10139996/pexels-photo-10139996.jpeg?cs=srgb&dl=pexels-sean-o%27brien-10139996.jpg&fm=jpg',
   },
   {
-    title: 'Gành đã giã',
+    title: 'Ghềnh Đá Đĩa',
     description:
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta tenetur nam similique, aperiam exercitationem nostrum, provident rem voluptatibus architecto ad fugiat soluta totam autem quos',
     image:
