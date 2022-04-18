@@ -1,5 +1,4 @@
-import { TourGuideList, Footer, TravelsList } from '@/components'
-import { Header, Slider } from '@/components'
+import { Header, Slider, TourGuideList, Footer, TravelsList } from '@/components'
 import place1 from '/images/place1.png'
 import place2 from '/images/place2.png'
 import place3 from '/images/place3.png'
