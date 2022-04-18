@@ -1,0 +1,7 @@
+export { default as Footer } from './Footer'
+export { default as Header } from './Header'
+export { default as Slider } from './Slider'
+export { default as TourGuide } from './TourGuide'
+export { default as TourGuideList } from './TourGuideList'
+export { default as Travel } from './Travel'
+export { default as TravelsList } from './TravelsList'

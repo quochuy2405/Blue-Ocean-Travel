@@ -1,10 +1,7 @@
-import './App.css'
 import { Route, Routes } from 'react-router-dom'
-import './App.css'
-import './Styles/Responsive.scss'
-import Home from './Page/Home'
-import DetailTravel from './Page/DetailTravel'
-function App() {
+import { Home, DetailTravel } from './page'
+
+function App(): JSX.Element {
   return (
     <div className="App">
       <Routes>

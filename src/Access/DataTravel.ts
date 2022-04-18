@@ -1,6 +1,1 @@
-export const dataTravel = [
-    
-
-
-    
-]
+export const dataTravel = []

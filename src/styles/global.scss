@@ -1,0 +1,21 @@
+@use 'reset';
+@use 'variables';
+
+body {
+  font-family: Poppins, 'Segoe UI Variable', 'Segoe UI', -apple-system, BlinkMacSystemFont,
+    'ui-sans-serif', sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
