@@ -1,4 +1,5 @@
 import { IconCalendarClock, IconIdCard } from '@douyinfe/semi-icons'
+import { Tooltip } from '@mui/material'
 import React from 'react'
 import { ITravel } from '../Interface'
 import '../Styles/Travel.scss'
@@ -9,14 +10,17 @@ const Travel = (travel: ITravel) => {
         <img src={travel.thumbnail} alt="anh" />
       </div>
       <div className="info-travel">
-        <div className="icon-date">
-          <IconCalendarClock size="large" /> <span>{travel.date.slice(0, 5)}</span>
-        </div>
-
-        <div className="icon-tour-guide">
-          <IconIdCard size={'large'} />{' '}
-          <span>{travel.tour_guide.split(' ')[travel.tour_guide.split(' ').length - 1]}</span>
-        </div>
+        <Tooltip title={travel.date}>
+          <div className="icon-date">
+            <IconCalendarClock size="large" /> <span>{travel.date.slice(0, 5)}</span>
+          </div>
+        </Tooltip>
+        <Tooltip title={travel.tour_guide}>
+          <div className="icon-tour-guide">
+            <IconIdCard size={'large'} />{' '}
+            <span>{travel.tour_guide.split(' ')[travel.tour_guide.split(' ').length - 1]}</span>
+          </div>
+        </Tooltip>
       </div>
       <div className="description-travel">
         <p>
