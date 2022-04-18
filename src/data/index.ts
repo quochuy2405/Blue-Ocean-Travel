@@ -1,5 +1,5 @@
 import { NghinhPhong } from './NghinhPhong'
-import { EoGio } from './Eogio'
+import { EoGio } from './EoGio'
 import { LinhPhong } from './LinhPhong'
 import { ThapBaPonagar } from './ThapBaPonagar'
 import { GhenhDaDia } from './GhenhDaDia'
