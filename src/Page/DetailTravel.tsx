@@ -3,8 +3,8 @@ import { useParams } from 'react-router-dom'
 import Header from '../Components/Header'
 import ListTravel from '../Components/ListTravel'
 const DetailTravel = () => {
-  const path = useParams()
-  console.log(path)
+  const { id } = useParams()
+
   return (
     <div className="details-page">
       <Header />
