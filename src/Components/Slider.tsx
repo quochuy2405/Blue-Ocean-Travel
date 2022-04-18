@@ -29,7 +29,7 @@ const Slider = () => {
     <div className="slider-box">
       <div className="sliders">
         {listSlider.map((item, index) => (
-          <div className={`slider ${index === activeSlider ? 'active' : ''}`}>
+          <div key={index} className={`slider ${index === activeSlider ? 'active' : ''}`}>
             <div className="content">
               <div className="title">
                 <p>{listSlider[activeSlider].title}</p>

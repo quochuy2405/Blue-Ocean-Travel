@@ -86,7 +86,7 @@ function Home() {
           </div>
         </div>
         <ListTravel titleList="Khám Phá" />
-        <ListTravel titleList="TOP TRAVEL" size={4} />
+        <ListTravel titleList="TOP TRAVEL" size={3} />
         <TourGuideList />
       </div>
       <Footer />

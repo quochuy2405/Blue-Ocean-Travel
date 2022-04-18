@@ -8,6 +8,7 @@ import travel3 from '../image/br.png'
 import travel4 from '../image/br.png'
 import travel5 from '../image/br.png'
 import Travel from './Travel'
+import { Link } from 'react-router-dom'
 
 const ListTravel = ({ titleList, size }: { titleList: string; size?: number }) => {
   const list: Array<ITravel> = [
@@ -59,8 +60,10 @@ const ListTravel = ({ titleList, size }: { titleList: string; size?: number }) =
       <p className="enjoy">Discover</p>
       <p className="title">{titleList}</p>
       <div className="list-item">
-        {list.slice(0,size).map((item, index) => (
-          <Travel {...item} key={index} />
+        {list.slice(0, size).map((item, index) => (
+          <Link key={index} to="/a">
+            <Travel {...item} />
+          </Link>
         ))}
       </div>
     </div>
