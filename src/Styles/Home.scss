@@ -1,0 +1,77 @@
+.home {
+  & .intro {
+    width: 80%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: center;
+    & .content-top {
+      flex-basis: 50%;
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+
+      & .enjoy p {
+        font-family: 'Satisfy', cursive;
+        color: rgb(112, 220, 220);
+        font-size: 1.7rem;
+      }
+      & .title p {
+        font-size: var(--title-size);
+        font-weight: 800;
+      }
+      & .description {
+        & p {
+          opacity: 0.8;
+          width: 60%;
+          margin: 0 auto;
+        }
+      }
+    }
+    & .content-bottom {
+      flex-basis: 40%;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      text-align: center;
+      align-items: center;
+      gap: 20px;
+      & .item-type-content {
+        flex-basis: 25%;
+        display: flex;
+        flex-direction: column;
+        & .item-img {
+          width: 70px;
+          height: 70px;
+          margin: 0 auto;
+          & img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+        & .content-text {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+
+          gap: 10px;
+          & .item-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+          }
+          & .item-description {
+            width: 90%;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+}

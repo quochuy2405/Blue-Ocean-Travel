@@ -1,0 +1,66 @@
+/*Ipad ngang(1024 x 768)*/
+@import './Variable.css';
+@media screen and (max-width: 1024px) {
+  .home .tour-guide-list {
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+    width: 35%;
+  }
+  .home {
+    & .content-bottom {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}
+/*Ipad dọc(768 x 1024)*/
+@media screen and (max-width: 768px) {
+  #footer .footer-top {
+    flex-direction: column;
+    height: 100%;
+    padding: 10px;
+    & .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      & img {
+        display: block;
+        margin: auto;
+      }
+    }
+    & p {
+      text-align: center !important;
+    }
+  }
+}
+/*Tablet nhỏ(480 x 640)*/
+@media screen and (max-width: 480px) {
+  .home .tour-guide-list {
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+    width: 85%;
+  }
+  .header.header {
+    & .header-logo {
+      width: 100%;
+      background-size: 0.2em 100%;
+      font: 6em/1 'Poppins', Impact;
+    }
+
+    & .header-nav-links {
+      display: none;
+    }
+  }
+  :root:root {
+    --title-size: 3.2rem ;
+  }
+}
+/*Iphone(480 x 640)*/
+@media screen and (max-width: 320px) {
+}
+/*Smart phone nhỏ*/
+@media screen and (max-width: 240px) {
+}
