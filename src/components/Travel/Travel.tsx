@@ -19,7 +19,7 @@ const Travel = (travel: ITravel) => {
         <Tooltip title={travel.tour_guide}>
           <div className="icon-tour-guide">
             <IconIdCard size={'large'} />{' '}
-            <span>{travel.tour_guide.split(' ')[travel.tour_guide.split(' ').length - 1]}</span>
+            <span>{travel.tour_guide}</span>
           </div>
         </Tooltip>
       </div>
