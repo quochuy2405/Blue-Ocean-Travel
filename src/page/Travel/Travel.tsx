@@ -1,6 +1,10 @@
 import { Footer, Header, Slider } from "@/components";
 import  styles  from "./Travel.module.scss"
-const Travel = ():JSX.Element => {
+const Travel = (): JSX.Element => {
+      useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
     return (
         <div>
             <Header />
