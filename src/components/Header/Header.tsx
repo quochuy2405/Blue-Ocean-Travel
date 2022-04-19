@@ -1,6 +1,5 @@
 import { NavLink } from 'react-router-dom'
 import styles from './Header.module.scss'
-
 const Header = (): JSX.Element => {
   return (
     <div className={styles.header}>
@@ -19,11 +18,11 @@ const Header = (): JSX.Element => {
         </svg>
       </div>
       <div className={styles.headerNavLinks}>
-        <div className={styles.navLink}>
-          <NavLink to={'/'}>Home</NavLink>
+        <div className={styles.navLink} >
+          <NavLink className={({ isActive }) => (isActive ? styles.active: 'inactive')} to={'/'}>Home</NavLink>
         </div>
         <div className={styles.navLink}>
-          <NavLink to={'/'}>Travel</NavLink>
+          <NavLink className={({ isActive }) => (isActive ? styles.active : 'inactive')} to={'/travel'}>Travel</NavLink>
         </div>
         <div className={styles.headerNavSearch}>
           <i className="ti-search"></i>

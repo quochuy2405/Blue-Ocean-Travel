@@ -1,5 +1,5 @@
 @use 'src/styles/mixins' as *;
-
+@use 'src/styles/global' as *;
 .home {
   & .intro {
     width: 80%;
