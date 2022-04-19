@@ -13,7 +13,10 @@ const list: ITravel[] = [
   {
     thumbnail: travel0,
     title: 'huy',
-    description: 'Nghinh Phong',
+    description:`  Công trình kiến trúc Quảng trường Nghinh Phong Phú Yên nằm ở ngã tư Nguyễn Hữu Thọ và Độc
+        Lập, thành phố Tuy Hòa. Lấy ý tưởng từ Gành Đá Dĩa, những khối đá tròn xếp chồng liền kề
+        nhau, biểu tượng của du lịch Phú Yên. Huni Architectes có trụ sở tại Pháp là đơn vị thiết kế
+        công trình này`  ,
     date: '20/20/2001',
     tour_guide: 'Bui Quoc Huy',
     place: 'nghinhphong',
@@ -21,7 +24,10 @@ const list: ITravel[] = [
   {
     thumbnail: travel1,
     title: 'huy',
-    description: 'Eo Gió',
+    description:`  Công trình kiến trúc Quảng trường Nghinh Phong Phú Yên nằm ở ngã tư Nguyễn Hữu Thọ và Độc
+        Lập, thành phố Tuy Hòa. Lấy ý tưởng từ Gành Đá Dĩa, những khối đá tròn xếp chồng liền kề
+        nhau, biểu tượng của du lịch Phú Yên. Huni Architectes có trụ sở tại Pháp là đơn vị thiết kế
+        công trình này` ,
     date: '20/20/2001',
     tour_guide: 'Bui Quoc Huy',
     place: 'eogio',
@@ -29,7 +35,10 @@ const list: ITravel[] = [
   {
     thumbnail: travel2,
     title: 'huy',
-    description: 'Chùa Linh Phong',
+    description:`  Công trình kiến trúc Quảng trường Nghinh Phong Phú Yên nằm ở ngã tư Nguyễn Hữu Thọ và Độc
+        Lập, thành phố Tuy Hòa. Lấy ý tưởng từ Gành Đá Dĩa, những khối đá tròn xếp chồng liền kề
+        nhau, biểu tượng của du lịch Phú Yên. Huni Architectes có trụ sở tại Pháp là đơn vị thiết kế
+        công trình này`,
     date: '20/20/2001',
     tour_guide: 'Bui Quoc Huy',
     place: 'linhphong',
@@ -37,7 +46,10 @@ const list: ITravel[] = [
   {
     thumbnail: travel3,
     title: 'huy',
-    description: 'Tháp Bà Ponagar',
+    description:`  Công trình kiến trúc Quảng trường Nghinh Phong Phú Yên nằm ở ngã tư Nguyễn Hữu Thọ và Độc
+        Lập, thành phố Tuy Hòa. Lấy ý tưởng từ Gành Đá Dĩa, những khối đá tròn xếp chồng liền kề
+        nhau, biểu tượng của du lịch Phú Yên. Huni Architectes có trụ sở tại Pháp là đơn vị thiết kế
+        công trình này`,
     date: '20/20/2001',
     tour_guide: 'Bui Quoc Huy',
     place: 'thapbaponagar',
@@ -45,7 +57,10 @@ const list: ITravel[] = [
   {
     thumbnail: travel4,
     title: 'huy',
-    description: 'Ghềnh Đá Đĩa',
+    description:`  Công trình kiến trúc Quảng trường Nghinh Phong Phú Yên nằm ở ngã tư Nguyễn Hữu Thọ và Độc
+        Lập, thành phố Tuy Hòa. Lấy ý tưởng từ Gành Đá Dĩa, những khối đá tròn xếp chồng liền kề
+        nhau, biểu tượng của du lịch Phú Yên. Huni Architectes có trụ sở tại Pháp là đơn vị thiết kế
+        công trình này`,
     date: '20/20/2001',
     tour_guide: 'Bui Quoc Huy',
     place: 'ghenhdadia',
@@ -53,8 +68,10 @@ const list: ITravel[] = [
   {
     thumbnail: travel5,
     title: 'huy',
-    description: 'Kỳ Co',
-    date: '20/20/2001',
+    description:`  Công trình kiến trúc Quảng trường Nghinh Phong Phú Yên nằm ở ngã tư Nguyễn Hữu Thọ và Độc
+        Lập, thành phố Tuy Hòa. Lấy ý tưởng từ Gành Đá Dĩa, những khối đá tròn xếp chồng liền kề
+        nhau, biểu tượng của du lịch Phú Yên. Huni Architectes có trụ sở tại Pháp là đơn vị thiết kế
+        công trình này`,    date: '20/20/2001',
     tour_guide: 'Bui Quoc Huy',
     place: 'kyco',
   },
