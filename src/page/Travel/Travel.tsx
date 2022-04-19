@@ -1,4 +1,5 @@
 import { Footer, Header, Slider } from "@/components";
+import { useEffect } from "react";
 import  styles  from "./Travel.module.scss"
 const Travel = (): JSX.Element => {
       useEffect(() => {

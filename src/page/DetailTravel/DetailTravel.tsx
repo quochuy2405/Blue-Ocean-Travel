@@ -11,7 +11,7 @@ const DetailTravel = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0)
-  }, [])
+  }, [id])
 
   return (
     <div className="details-page">
