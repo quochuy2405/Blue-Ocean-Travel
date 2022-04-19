@@ -71,7 +71,7 @@ const list: ITravel[] = [
     description:`  Công trình kiến trúc Quảng trường Nghinh Phong Phú Yên nằm ở ngã tư Nguyễn Hữu Thọ và Độc
         Lập, thành phố Tuy Hòa. Lấy ý tưởng từ Gành Đá Dĩa, những khối đá tròn xếp chồng liền kề
         nhau, biểu tượng của du lịch Phú Yên. Huni Architectes có trụ sở tại Pháp là đơn vị thiết kế
-        công trình này`,    date: '20/20/2001',
+        công trình này1`,    date: '20/20/2001',
     tour_guide: 'Bui Quoc Huy',
     place: 'kyco',
   },
