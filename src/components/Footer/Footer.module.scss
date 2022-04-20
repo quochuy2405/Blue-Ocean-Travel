@@ -136,6 +136,9 @@ $time-step: calc($time / $max);
     @include lg{
              display: block;
     }
+    @include md{
+          padding: 10px 30px;
+    }
   & ul {
     margin: 0;
     padding: 10px;
