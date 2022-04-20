@@ -10,49 +10,92 @@ import type { ITourGuide } from '@/types'
 const ListTourGuide: ITourGuide[] = [
   {
     avatar: avatar1,
-    name: 'Như Quỳnh',
+    name: 'Trần Thị Bích Cẩm',
     DOB: '07/04/2000',
-    position: 'Manager',
+    position: 'Tour Guide',
     code: '1212',
     tel: '029122912',
-    br: br1,
+    br: br3,
   },
-  {
+   {
     avatar: avatar1,
-    name: 'Như Quỳnh',
+    name: 'Nguyễn Linh Ngân',
     DOB: '07/04/2000',
-    position: 'Manager',
+    position: 'Tour Guide',
     code: '1212',
     tel: '029122912',
     br: br2,
   },
-  {
+    {
     avatar: avatar1,
-    name: 'Như Quỳnh',
+    name: 'Bùi Thị Như Quỳnh',
     DOB: '07/04/2000',
-    position: 'Manager',
+    position: 'Tour Guide',
+    code: '1212',
+    tel: '029122912',
+    br: br3,
+  },
+     {
+    avatar: avatar1,
+    name: 'Nhu Hang Le',
+    DOB: '07/04/2000',
+    position: 'Tour Guide',
+    code: '1212',
+    tel: '029122912',
+    br: br4,
+  },
+      {
+    avatar: avatar1,
+    name: 'Thu Hà',
+    DOB: '07/04/2000',
+    position: 'Tour Guide',
     code: '1212',
     tel: '029122912',
     br: br3,
   },
   {
     avatar: avatar1,
-    name: 'Như Quỳnh',
+    name: 'Trần Hoàn Vi',
     DOB: '07/04/2000',
-    position: 'Manager',
+    position: 'Tour Guide',
+    code: '1212',
+    tel: '029122912',
+    br: br2,
+  },
+  {
+    avatar: avatar1,
+    name: 'Tuyền Phạm',
+    DOB: '07/04/2000',
+    position: 'Tour Guide',
     code: '1212',
     tel: '029122912',
     br: br4,
+  },
+  {
+    avatar: avatar1,
+    name: 'Da Eun',
+    DOB: '07/04/2000',
+    position: 'Tour Guide',
+    code: '1212',
+    tel: '029122912',
+    br: br3,
   },
 ]
 
 const TourGuideList = () => {
   return (
+    <>  <div className={styles.enjoy}>
+              <p>Tour Guide </p>
+            </div>
+            <div className={styles.title}>
+              <p>CONTACT</p>
+            </div>
     <div className={styles.tourGuideList}>
       {ListTourGuide.map((item: ITourGuide, index) => (
         <TourGuide {...item} key={index} />
       ))}
     </div>
+    </>
   )
 }
 

@@ -1,9 +1,11 @@
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import styles from './Header.module.scss'
 const Header = (): JSX.Element => {
   return (
     <div className={styles.header}>
-      <div className={styles.headerLogo}>
+     
+        <div className={styles.headerLogo}>
+         <Link to ='/'>
         <svg viewBox="0 0 1000 150">
           <symbol id="s-text">
             <text textAnchor="middle" x="50%" y="50%" dy=".35em">
@@ -15,8 +17,11 @@ const Header = (): JSX.Element => {
           <use xlinkHref="#s-text" />
           <use xlinkHref="#s-text" />
           <use xlinkHref="#s-text" />
-        </svg>
+          </svg>
+        </Link>
       </div>
+     
+     
       <div className={styles.headerNavLinks}>
         <div className={styles.navLink} >
           <NavLink className={({ isActive }) => (isActive ? styles.active: 'inactive')} to={'/'}>Home</NavLink>

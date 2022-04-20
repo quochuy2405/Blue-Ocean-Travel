@@ -1,5 +1,5 @@
-@use 'src/styles/mixins' as *;
-@use 'src/styles/global' as *;
+@use "src/styles/mixins" as *;
+@use "src/styles/global" as *;
 .home {
   & .intro {
     width: 80%;
@@ -19,19 +19,26 @@
       justify-content: center;
 
       & .enjoy p {
-        font-family: 'Satisfy', cursive;
+        font-family: "Satisfy", cursive;
         color: rgb(112, 220, 220);
         font-size: 1.7rem;
       }
       & .title p {
         font-size: var(--title-size);
         font-weight: 800;
+        @include md {
+          font-size: calc(var(--title-size) / 1.5);
+        }
       }
       & .description {
         & p {
           opacity: 0.8;
           width: 60%;
           margin: 0 auto;
+          padding: 20px 0;
+          @include md {
+            width: 90%;
+          }
         }
       }
     }
@@ -73,6 +80,7 @@
           & .itemTitle {
             font-weight: 700;
             font-size: 1.1rem;
+            
           }
           & .itemDescription {
             width: 90%;

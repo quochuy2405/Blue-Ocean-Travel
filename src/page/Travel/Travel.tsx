@@ -1,4 +1,4 @@
-import { Footer, Header, Slider } from "@/components";
+import { Footer, Header, Slider, TravelsList } from "@/components";
 import { useEffect } from "react";
 import  styles  from "./Travel.module.scss"
 const Travel = (): JSX.Element => {
@@ -11,7 +11,7 @@ const Travel = (): JSX.Element => {
             <Header />
              <div className={styles.bodyPage}>
                 <Slider />
-                
+                 <TravelsList titleList="DISCOVER" />
             </div>
             <Footer/>
         </div>

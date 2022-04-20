@@ -1,3 +1,4 @@
+@use 'src/styles/mixins' as *;
 .sliderBox {
   width: 100%;
   height: calc(100vh - var(--header-height));
@@ -41,6 +42,7 @@
 
 .content {
   visibility: hidden;
+ 
 }
 
 .sliderActive .content {
@@ -56,12 +58,15 @@
   align-items: center;
   text-align: center;
   z-index: 99;
-
+  padding: 10px;
   .title {
     font-size: var(--title-size);
     font-weight: 700;
     text-transform: uppercase;
     animation: SlideUp ease-in-out 0.7s;
+     @include md{
+       font-size: calc(var(--title-size)/2);
+    }
   }
 
   .description {
@@ -73,6 +78,9 @@
     overflow: hidden;
     text-overflow: ellipsis;
     animation: SlideUp ease-in-out 0.7s;
+     @include md{
+    width: 100%;
+    }
   }
 }
 

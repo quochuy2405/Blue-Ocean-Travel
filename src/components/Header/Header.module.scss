@@ -5,7 +5,7 @@ $dash-gap: 10;
 $dash-space: $dash * ($max - 1) + $dash-gap * $max;
 $time: 6s;
 $time-step: calc($time / $max);
-
+@use 'src/styles/mixins' as *;
 .header {
   position: fixed;
   top: 0;
@@ -16,6 +16,10 @@ $time-step: calc($time / $max);
   display: flex;
   padding: 0 100px;
   box-shadow: 0px 0px 10px 2px rgba(86, 85, 85, 0.29);
+    @include md{
+    gap: 20px;
+    justify-content: center;
+  }
 }
 
 .headerLogo {
@@ -59,6 +63,10 @@ $time-step: calc($time / $max);
   justify-content: space-evenly;
   height: 100%;
   align-items: center;
+   @include md{
+    gap: 20px;
+    justify-content: center;
+  }
 }
 
 .headerNavSearch {

@@ -1,9 +1,55 @@
 @use 'src/styles/mixins' as *;
+$colors: #4378d4, #c2c2d4, #000000, #ffca4e, #a3d1f9;
+$max: length($colors);
+$dash: 70;
+$dash-gap: 10;
+$dash-space: $dash * ($max - 1) + $dash-gap * $max;
+$time: 6s;
+$time-step: calc($time / $max);
+.footerLogo {
 
+  width: 40%;
+  height: var(--header-height);
+  text-align: center;
+  margin: 0 auto;
+  background-size: 0.2em 100%;
+  font: 5em/1 "Poppins", Impact;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+    @include md{
+        width: 80%;
+        font-size: 8rem;
+    }
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  use {
+    fill: none;
+    stroke-width: 2;
+    stroke-linejoin: round;
+    stroke-dasharray: $dash $dash-space;
+    stroke-dashoffset: 0;
+    -webkit-animation: stroke $time infinite linear;
+    animation: stroke $time infinite linear;
+
+    @for $item from 1 through $max {
+      &:nth-child(#{$max}n + #{$item}) {
+        $color: nth($colors, $item);
+        stroke: $color;
+        -webkit-animation-delay: -($time-step * $item);
+        animation-delay: -($time-step * $item);
+      }
+    }
+  }
+}
 .footer {
   min-height: 70vh;
   width: 100%;
-  background-color: rgba(241, 241, 241, 0.523);
+  background-color: rgba(255, 255, 255, 0.859);
   margin-top: 40px;
   display: flex;
   padding: 20px 0;
@@ -64,7 +110,11 @@
   & p {
     font-family: 'Satisfy', cursive;
     font-weight: 600;
+     @include md{
+       font-size: calc(var(--title-size) / 2);
+    }
   }
+  
 }
 
 .companyTour {
@@ -78,13 +128,22 @@
 
 .footerDescription {
   flex: 2;
-  width: 80%;
+  width: 100%;
+  padding: 10px 100px;
   margin: 0 auto;
-
+  display: flex;
+  justify-content: space-around;
+    @include lg{
+             display: block;
+    }
   & ul {
     margin: 0;
-    padding-left: 10%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     & li {
+      width: fit-content;
       list-style: none;
       & p {
         font-size: 0.9rem;
@@ -93,5 +152,16 @@
         text-align: left;
       }
     }
+  }
+}
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -($dash + $dash-gap) * $max;
+  }
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -($dash + $dash-gap) * $max;
   }
 }

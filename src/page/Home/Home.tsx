@@ -81,8 +81,8 @@ function Home() {
             </div>
           </div>
         </div>
-        <TravelsList titleList="Khám Phá" />
-        <TravelsList titleList="TOP TRAVEL" size={3} />
+        <TravelsList titleList="DISCOVER" size={4}/>
+        <TravelsList titleList="TOP TRAVEL" size={4} />
         <TourGuideList />
       </div>
       <Footer />
